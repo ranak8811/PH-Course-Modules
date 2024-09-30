@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Position</title>
+
+    <style>
+      .color-container {
+        width: 300px;
+        border: 3px solid green;
+      }
+      .box {
+        width: 200px;
+        height: 200px;
+        border: 4px solid purple;
+      }
+
+      .dummy {
+        width: 250px;
+        height: 250px;
+        border: 4px solid black;
+      }
+
+      .blue-color {
+        position: sticky;
+        top: 0;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="color-container">
+      <div class="box"></div>
+      <div class="box"></div>
+      <div class="box"></div>
+      <div class="box"></div>
+      <div class="box" style="background-color: red">red</div>
+      <div class="box blue-color" style="background-color: blue">blue</div>
+      <div class="box" style="background-color: yellow">yello</div>
+
+      <div class="box"></div>
+      <div class="box"></div>
+      <div class="box"></div>
+    </div>
+
+    <div class="color-container">
+      <div class="dummy"></div>
+      <div class="dummy"></div>
+      <div class="dummy"></div>
+      <div class="dummy"></div>
+      <div class="dummy"></div>
+      <div class="dummy"></div>
+      <div class="dummy"></div>
+      <div class="dummy"></div>
+      <div class="dummy"></div>
+      <div class="dummy"></div>
+      <div class="dummy"></div>
+      <div class="dummy"></div>
+    </div>
+  </body>
+</html>
