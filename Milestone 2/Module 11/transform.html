@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Transform</title>
+
+    <style>
+      html,
+      body {
+        height: 100%;
+        margin: 0;
+        margin-top: 300px;
+      }
+
+      body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .main-container {
+        max-width: 1140px;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center; /* optional for centering text */
+        margin-top: 600px;
+      }
+
+      .container,
+      .inner {
+        width: 300px;
+        height: 300px;
+      }
+
+      .container {
+        border: 3px solid red;
+        background-color: aquamarine;
+      }
+      .inner {
+        border: 3px solid yellowgreen;
+        background-color: palegoldenrod;
+        /* display: none; */
+        /* transform: scale(0.25, 0.5); */
+        /* transform: rotate(45deg); */
+        transition: background-color 5s, border 4s, transform 7s;
+      }
+
+      .inner:hover {
+        transform: scale(0.75) rotate(60deg) translateX(140px);
+        background-color: yellow;
+        border: 10px solid blue;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="main-container">
+      <h2>Explore Transform and Translate</h2>
+      <div class="container">
+        <div class="inner">Inner 1</div>
+      </div>
+      <div class="container">
+        <div class="inner">Inner 2</div>
+      </div>
+      <div class="container">
+        <div class="inner">Inner 3</div>
+      </div>
+    </div>
+  </body>
+</html>

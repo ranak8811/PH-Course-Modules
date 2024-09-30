@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS Variable</title>
+
+    <style>
+      :root {
+        --primary-color: steelblue;
+      }
+      h1 {
+        color: var(--primary-color);
+      }
+
+      h5 {
+        background-color: var(--primary-color);
+      }
+
+      .box {
+        border: 2px solid black;
+        width: calc(100% - 300px);
+      }
+
+      .box p {
+        color: var(--primary-color);
+      }
+
+      .sidebar {
+        background-color: lightgray;
+      }
+
+      .content {
+        background-color: lightskyblue;
+      }
+
+      .container {
+        display: grid;
+        gap: 20px;
+        grid-template-rows: 500px;
+        grid-template-columns: 200px calc(100% - 200px - 20px);
+      }
+    </style>
+  </head>
+  <body>
+    <h1>CSS custom properties</h1>
+    <h5>css variable</h5>
+    <div class="box">
+      <h3>I am doing something</h3>
+      <p>
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aliquid unde
+        dolor doloribus nemo est deserunt id hic nobis. Eum, aspernatur.
+      </p>
+    </div>
+
+    <div class="container">
+      <div class="sidebar">Sidebar</div>
+      <div class="content">Main Content</div>
+    </div>
+  </body>
+</html>
