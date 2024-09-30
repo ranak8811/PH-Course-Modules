@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Flex Example</title>
+    <style>
+      .container {
+        display: flex;
+        width: 600px;
+        height: 200px;
+        background-color: #f0f0f0;
+
+        border: 2px solid red;
+      }
+      .box1 {
+        flex: 1;
+        background-color: #4caf50;
+        color: white;
+        text-align: center;
+        padding: 20px;
+        margin: 5px;
+      }
+      .box2 {
+        background-color: #2196f3;
+        color: white;
+        text-align: center;
+        padding: 20px;
+        margin: 5px;
+        /* No flex properties defined */
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="box1">Box 1 (flex: 1)</div>
+      <div class="box2">Box 2 (no flex)</div>
+    </div>
+  </body>
+</html>

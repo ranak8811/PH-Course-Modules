@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@2.15.3/dist/full.css"
+      rel="stylesheet"
+    />
+    <style>
+      .portfolio-container {
+        max-width: 1140px;
+        margin: 0 auto;
+        padding: 2rem 1rem;
+      }
+
+      .card {
+        border-radius: 0.5rem;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      }
+    </style>
+  </head>
+
+  <body class="bg-gray-50">
+    <div class="portfolio-container">
+      <div class="text-center">
+        <button class="btn btn-sm btn-outline btn-success">
+          Explore our Latest works
+        </button>
+        <h2 class="text-4xl font-extrabold mt-6">Our Latest Portfolio</h2>
+        <p class="text-gray-500 mt-4">
+          The barn house captivates with its blend of rustic charm and modern
+          sophistication, featuring weathered wood, sleek metal accents.
+        </p>
+      </div>
+
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-6 mt-10">
+        <!-- First Row -->
+        <div class="card grid lg:grid-cols-2 bg-white p-4">
+          <img src="./images/img1.png" alt="Portfolio 1" class="rounded-l-md" />
+          <div class="flex flex-col justify-center p-4">
+            <h3 class="text-xl font-bold">Commercial</h3>
+            <p class="text-gray-500 mt-2">
+              The barn house captivates with its blend of rustic charm and
+              modern. The barn house captivates with its blend of rustic charm
+              and modern.
+            </p>
+            <a
+              href="#"
+              class="text-green-600 font-semibold mt-4 flex items-center"
+            >
+              View Details
+              <svg
+                class="w-4 h-4 ml-2"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M5 12h14M12 5l7 7-7 7"
+                ></path>
+              </svg>
+            </a>
+          </div>
+        </div>
+
+        <div class="card bg-white p-4">
+          <img src="./images/img2.png" alt="Portfolio 2" class="rounded-md" />
+        </div>
+
+        <!-- Second Row -->
+        <div class="card bg-white p-4">
+          <img src="./images/img3.png" alt="Portfolio 3" class="rounded-md" />
+        </div>
+
+        <div class="card grid lg:grid-cols-2 bg-white p-4">
+          <img src="./images/img4.png" alt="Portfolio 4" class="rounded-l-md" />
+          <div class="flex flex-col justify-center p-4">
+            <h3 class="text-xl font-bold">Commercial</h3>
+            <p class="text-gray-500 mt-2">
+              The barn house captivates with its blend of rustic charm and
+              modern.
+            </p>
+            <a
+              href="#"
+              class="text-green-600 font-semibold mt-4 flex items-center"
+            >
+              View Details
+              <svg
+                class="w-4 h-4 ml-2"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M5 12h14M12 5l7 7-7 7"
+                ></path>
+              </svg>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Order checking</title>
+
+    <style>
+      .middle {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        margin-top: 100px;
+      }
+      .order {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 20;
+      }
+
+      .ami {
+        order: 2;
+      }
+      .tmi {
+        order: 6;
+      }
+      .nai {
+        order: 0;
+      }
+
+      .grid-order {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+      }
+
+      .one {
+        order: 3;
+      }
+      .two {
+        order: -2;
+      }
+      .three {
+        order: 5;
+      }
+      .four {
+        order: 0;
+      }
+    </style>
+  </head>
+  <body class="middle">
+    <h1>Order checking</h1>
+    <div class="order">
+      <h2 class="ami">ami</h2>
+      <h2 class="tmi">tmi</h2>
+      <h2 class="nai">nai</h2>
+    </div>
+
+    <h1>Grid order checking</h1>
+    <div class="grid-order">
+      <h2 class="one">one</h2>
+      <h2 class="two">two</h2>
+      <h2 class="three">three</h2>
+      <h2 class="four">four</h2>
+    </div>
+  </body>
+</html>

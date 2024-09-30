@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Daisy Ui Test</title>
+
+    <!-- daisy ui and tailwind css cnd -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body>
+    <section class="w-5/6 mx-auto border-5 border-green-500">
+      <div class="navbar bg-base-100">
+        <div class="navbar-start">
+          <div class="dropdown">
+            <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="h-5 w-5"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M4 6h16M4 12h8m-8 6h16"
+                />
+              </svg>
+            </div>
+            <ul
+              tabindex="0"
+              class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow"
+            >
+              <li><a>Item 1</a></li>
+              <li>
+                <a>Parent</a>
+                <ul class="p-2">
+                  <li><a>Submenu 1</a></li>
+                  <li><a>Submenu 2</a></li>
+                </ul>
+              </li>
+              <li><a>Item 3</a></li>
+            </ul>
+          </div>
+          <a class="btn btn-ghost text-xl">daisyUI</a>
+        </div>
+        <div class="navbar-center hidden lg:flex">
+          <ul class="menu menu-horizontal px-1">
+            <li><a>Item 1</a></li>
+            <li>
+              <details>
+                <summary>Parent</summary>
+                <ul class="p-2">
+                  <li><a>Submenu 1</a></li>
+                  <li><a>Submenu 2</a></li>
+                </ul>
+              </details>
+            </li>
+            <li><a>Item 3</a></li>
+          </ul>
+        </div>
+        <div class="navbar-end">
+          <a class="btn">Button</a>
+        </div>
+      </div>
+
+      <h1>Testing daisy ui</h1>
+      <button class="btn btn-primary">click me</button>
+
+      <br />
+
+      <div class="dropdown dropdown-bottom">
+        <div tabindex="0" role="button" class="btn m-1">Click</div>
+        <ul
+          tabindex="0"
+          class="dropdown-content menu bg-base-100 rounded-box z-[1] w-52 p-2 shadow"
+        >
+          <li><a>Item 1</a></li>
+          <li><a>Item 2</a></li>
+        </ul>
+      </div>
+
+      <br /><br />
+      <!-- Open the modal using ID.showModal() method -->
+      <button class="btn" onclick="my_modal_2.showModal()">open modal</button>
+      <dialog id="my_modal_2" class="modal">
+        <div class="modal-box">
+          <h3 class="text-lg font-bold">Hello!</h3>
+          <p class="py-4">Press ESC key or click outside to close</p>
+        </div>
+        <form method="dialog" class="modal-backdrop">
+          <button>close</button>
+        </form>
+      </dialog>
+
+      <br /><br />
+      <label class="swap swap-flip text-9xl">
+        <!-- this hidden checkbox controls the state -->
+        <input type="checkbox" />
+
+        <div class="swap-on">😈</div>
+        <div class="swap-off">😇</div>
+      </label>
+
+      <br /><br />
+
+      <div class="collapse collapse-arrow bg-base-200">
+        <input type="radio" name="my-accordion-2" checked="checked" />
+        <div class="collapse-title text-xl font-medium">
+          Click to open this one and close others
+        </div>
+        <div class="collapse-content">
+          <p>hello</p>
+        </div>
+      </div>
+      <div class="collapse collapse-arrow bg-base-200">
+        <input type="radio" name="my-accordion-2" />
+        <div class="collapse-title text-xl font-medium">
+          Click to open this one and close others
+        </div>
+        <div class="collapse-content">
+          <p>hello</p>
+        </div>
+      </div>
+      <div class="collapse collapse-arrow bg-base-200">
+        <input type="radio" name="my-accordion-2" />
+        <div class="collapse-title text-xl font-medium">
+          Click to open this one and close others
+        </div>
+        <div class="collapse-content">
+          <p>hello</p>
+        </div>
+      </div>
+
+      <br /><br />
+
+      <div class="avatar">
+        <div class="w-32 rounded">
+          <img
+            src="https://img.daisyui.com/images/stock/photo-1534528741775-53994a69daeb.webp"
+          />
+        </div>
+      </div>
+      <div class="avatar">
+        <div class="w-20 rounded">
+          <img
+            src="https://img.daisyui.com/images/stock/photo-1534528741775-53994a69daeb.webp"
+            alt="Tailwind-CSS-Avatar-component"
+          />
+        </div>
+      </div>
+      <div class="avatar">
+        <div class="w-16 rounded">
+          <img
+            src="https://img.daisyui.com/images/stock/photo-1534528741775-53994a69daeb.webp"
+            alt="Tailwind-CSS-Avatar-component"
+          />
+        </div>
+      </div>
+      <div class="avatar">
+        <div class="w-8 rounded">
+          <img
+            src="https://img.daisyui.com/images/stock/photo-1534528741775-53994a69daeb.webp"
+            alt="Tailwind-CSS-Avatar-component"
+          />
+        </div>
+      </div>
+
+      <br /><br />
+
+      <div class="badge badge-info gap-2">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          fill="none"
+          viewBox="0 0 24 24"
+          class="inline-block h-4 w-4 stroke-current"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2"
+            d="M6 18L18 6M6 6l12 12"
+          ></path>
+        </svg>
+        info
+      </div>
+      <div class="badge badge-success gap-2">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          fill="none"
+          viewBox="0 0 24 24"
+          class="inline-block h-4 w-4 stroke-current"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2"
+            d="M6 18L18 6M6 6l12 12"
+          ></path>
+        </svg>
+        success
+      </div>
+      <div class="badge badge-warning gap-2">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          fill="none"
+          viewBox="0 0 24 24"
+          class="inline-block h-4 w-4 stroke-current"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2"
+            d="M6 18L18 6M6 6l12 12"
+          ></path>
+        </svg>
+        warning
+      </div>
+      <div class="badge badge-error gap-2">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          fill="none"
+          viewBox="0 0 24 24"
+          class="inline-block h-4 w-4 stroke-current"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2"
+            d="M6 18L18 6M6 6l12 12"
+          ></path>
+        </svg>
+        error
+      </div>
+
+      <br /><br />
+
+      <div class="card bg-base-100 w-96 shadow-xl">
+        <figure>
+          <img
+            src="https://img.daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.webp"
+            alt="Shoes"
+          />
+        </figure>
+        <div class="card-body">
+          <h2 class="card-title">Shoes!</h2>
+          <p>If a dog chews shoes whose shoes does he choose?</p>
+          <div class="card-actions justify-end">
+            <button class="btn btn-primary">Buy Now</button>
+          </div>
+        </div>
+      </div>
+
+      <br /><br />
+
+      <div class="carousel w-full">
+        <div id="item1" class="carousel-item w-full">
+          <img
+            src="https://img.daisyui.com/images/stock/photo-1625726411847-8cbb60cc71e6.webp"
+            class="w-full"
+          />
+        </div>
+        <div id="item2" class="carousel-item w-full">
+          <img
+            src="https://img.daisyui.com/images/stock/photo-1609621838510-5ad474b7d25d.webp"
+            class="w-full"
+          />
+        </div>
+        <div id="item3" class="carousel-item w-full">
+          <img
+            src="https://img.daisyui.com/images/stock/photo-1414694762283-acccc27bca85.webp"
+            class="w-full"
+          />
+        </div>
+        <div id="item4" class="carousel-item w-full">
+          <img
+            src="https://img.daisyui.com/images/stock/photo-1665553365602-b2fb8e5d1707.webp"
+            class="w-full"
+          />
+        </div>
+      </div>
+      <div class="flex w-full justify-center gap-2 py-2">
+        <a href="#item1" class="btn btn-xs">1</a>
+        <a href="#item2" class="btn btn-xs">2</a>
+        <a href="#item3" class="btn btn-xs">3</a>
+        <a href="#item4" class="btn btn-xs">4</a>
+      </div>
+
+      <br /><br />
+      <div class="flex gap-5">
+        <div>
+          <span class="countdown font-mono text-4xl">
+            <span style="--value: 15"></span>
+          </span>
+          days
+        </div>
+        <div>
+          <span class="countdown font-mono text-4xl">
+            <span style="--value: 10"></span>
+          </span>
+          hours
+        </div>
+        <div>
+          <span class="countdown font-mono text-4xl">
+            <span style="--value: 24"></span>
+          </span>
+          min
+        </div>
+        <div>
+          <span class="countdown font-mono text-4xl">
+            <span style="--value:${counter};"></span>
+          </span>
+          sec
+        </div>
+      </div>
+
+      <br /><br />
+
+      <div class="drawer">
+        <input id="my-drawer" type="checkbox" class="drawer-toggle" />
+        <div class="drawer-content">
+          <!-- Page content here -->
+          <label for="my-drawer" class="btn btn-primary drawer-button"
+            >Open drawer</label
+          >
+        </div>
+        <div class="drawer-side">
+          <label
+            for="my-drawer"
+            aria-label="close sidebar"
+            class="drawer-overlay"
+          ></label>
+          <ul class="menu bg-base-200 text-base-content min-h-full w-80 p-4">
+            <!-- Sidebar content here -->
+            <li><a>Sidebar Item 1</a></li>
+            <li><a>Sidebar Item 2</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <br /><br />
+      <br /><br />
+      <br /><br />
+      <br /><br />
+    </section>
+  </body>
+</html>

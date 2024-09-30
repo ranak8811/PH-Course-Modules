@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <style>
+      .container {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr; /* 4 equal columns */
+        gap: 10px; /* space between grid items */
+      }
+
+      .box1 {
+        background-color: lightblue;
+        grid-column: 1 / span 2.5; /* Spans 2.5 columns */
+      }
+
+      .box2 {
+        background-color: lightcoral;
+        grid-column: 3.5 / 5; /* Spans 1.5 columns */
+      }
+
+      .box3 {
+        background-color: lightgreen;
+        grid-column: 1 / 2; /* Spans 1 column */
+      }
+
+      .box4 {
+        background-color: lightpink;
+        grid-column: 2 / 3; /* Spans 1 column */
+      }
+
+      .box5 {
+        background-color: lightgoldenrodyellow;
+        grid-column: 3 / 4; /* Spans 1 column */
+      }
+
+      .box6 {
+        background-color: lightgray;
+        grid-column: 4 / 5; /* Spans 1 column */
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="box1">Box 1</div>
+      <div class="box2">Box 2</div>
+      <div class="box3">Box 3</div>
+      <div class="box4">Box 4</div>
+      <div class="box5">Box 5</div>
+      <div class="box6">Box 6</div>
+    </div>
+  </body>
+</html>

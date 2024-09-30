@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tailwind css</title>
+
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body>
+    <section
+      class="w-1/2 mx-auto border-4 border-orange-700 overflow-scroll h-30"
+    >
+      <h3>About us</h3>
+      <p>
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Debitis quam
+        deleniti nisi. Odio autem at, quos, quaerat harum aliquam numquam
+        quisquam consequuntur sint deleniti hic vero ex ab delectus obcaecati
+        dolor neque. Nulla dolor architecto quidem alias esse est itaque omnis
+        ex distinctio accusantium, ut minima aspernatur? Perferendis, optio
+        eveniet?
+      </p>
+    </section>
+
+    <hr />
+
+    <section class="md:bg-yellow-500 mt-4 lg:bg-green-200">
+      <h3>Responsiveness</h3>
+      <p>
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Veniam alias
+        nesciunt aliquid labore laudantium et. Nesciunt ipsam adipisci deserunt
+        velit eveniet maxime temporibus dolores, quibusdam, similique ipsa,
+        veritatis accusantium amet consectetur facilis suscipit quos ex aut
+        incidunt excepturi doloremque. Dolore quidem eligendi modi! Obcaecati,
+        suscipit quos iusto voluptate ipsum minus.
+      </p>
+    </section>
+
+    <hr />
+
+    <section>
+      <h3>flex</h3>
+      <div>
+        <div
+          class="md:flex md:justify-around border-4 border-yellow-300 p-8 overflow-scroll"
+        >
+          <div
+            class="w-32 h-32 border-4 border-blue-700 text-2xl font-bold rounded-lg flex items-center justify-center"
+          >
+            item 1
+          </div>
+          <div
+            class="w-32 h-32 border-4 border-blue-700 text-2xl font-bold rounded-lg flex items-center justify-center"
+          >
+            item 2
+          </div>
+          <div
+            class="w-32 h-32 border-4 border-blue-700 text-2xl font-bold rounded-lg items-center justify-center flex"
+          >
+            item 3
+          </div>
+          <div
+            class="w-32 h-32 border-4 border-blue-700 text-2xl font-bold rounded-lg flex items-center justify-center"
+          >
+            item 4
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <hr />
+
+    <section>
+      <h3 class="text-5xl">grid</h3>
+      <div class="grid lg:grid-cols-4 gap-4 md:grid-cols-3 sm:grid-cols-2">
+        <div class="bg-pink-300 border border-2 rounded-md">Box 1</div>
+        <div class="bg-pink-300 border border-2 rounded-md">Box 2</div>
+        <div class="bg-pink-300 border border-2 rounded-md">Box 3</div>
+        <div class="bg-pink-300 border border-2 rounded-md">Box 4</div>
+        <div class="bg-pink-300 border border-2 rounded-md">Box 5</div>
+        <div class="bg-pink-300 border border-2 rounded-md">Box 6</div>
+        <div class="row-span-3 bg-pink-300 border border-2 rounded-md">
+          Box 7
+        </div>
+        <div class="bg-pink-300 border border-2 rounded-md">Box 8</div>
+        <div class="bg-pink-300 border border-2 rounded-md">Box 9</div>
+        <div
+          class="md:col-span-3 row-span-2 bg-pink-300 border border-2 rounded-md"
+        >
+          Box 10
+        </div>
+        <div class="bg-pink-300 border border-2 rounded-md">Box 11</div>
+        <div class="bg-pink-300 border border-2 rounded-md">Box 12</div>
+        <div class="bg-pink-300 border border-2 rounded-md">Box 13</div>
+        <div class="bg-pink-300 border border-2 rounded-md">Box 14</div>
+        <div class="bg-pink-300 border border-2 rounded-md">Box 15</div>
+        <div class="bg-pink-300 border border-2 rounded-md">Box 16</div>
+        <div class="bg-pink-300 border border-2 rounded-md">Box 17</div>
+        <div class="lg:col-span-4 bg-pink-300 border border-2 rounded-md">
+          Box 18
+        </div>
+        <div class="bg-pink-300 border border-2 rounded-md">Box 19</div>
+        <div class="bg-pink-300 border border-2 rounded-md">Box 20</div>
+        <div class="bg-pink-300 border border-2 rounded-md">Box 21</div>
+        <div class="bg-pink-300 border border-2 rounded-md">Box 22</div>
+        <div class="bg-pink-300 border border-2 rounded-md">Box 23</div>
+        <div class="bg-pink-300 border border-2 rounded-md">Box 24</div>
+      </div>
+    </section>
+
+    <br />
+
+    <!-- gradient text -->
+    <section class="max-w-lg mx-auto bg-gray-200 text-center">
+      <h2
+        class="text-transparent bg-clip-text bg-gradient-to-r from-cyan-500 to-pink-500 text-4xl font-bold"
+      >
+        Gradient text color
+      </h2>
+      <p>
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Beatae,
+        minima!
+      </p>
+    </section>
+  </body>
+</html>
