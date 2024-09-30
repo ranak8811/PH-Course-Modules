@@ -1,0 +1,414 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+/* font family below
+  font-family: "Inter", sans-serif;
+  font-family: "Poppins", sans-serif; */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  max-width: 1380px;
+  margin: 0 auto;
+  /* border: 2px solid red; */
+}
+
+/* common design starts here */
+.description {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  text-align: center;
+  width: 600px;
+  margin: 20px;
+  color: rgb(112, 112, 112);
+}
+
+.btn-primary {
+  border-radius: 5px;
+  background: rgb(255, 89, 89);
+  color: white;
+  width: 150px;
+  height: 50px;
+  margin-top: 30px;
+  font-size: 1rem;
+  font-weight: bold;
+  border: none;
+}
+
+.title {
+  color: rgb(18, 18, 18);
+  font-family: "Inter", sans-serif;
+  font-size: 2.8rem;
+  font-weight: 700;
+}
+
+.display-flex {
+  display: flex;
+  justify-content: center;
+  align-items: left;
+  flex-direction: column;
+  gap: 15px;
+  padding: 15px;
+}
+/* common design ends here */
+
+/* banner design starts here */
+.banner-container {
+  background-image: url("../images/donation1.jpg");
+  /* background-image: linear-gradient(
+      180deg,
+      rgba(19, 19, 24, 0.8) 0%,
+      rgba(19, 19, 24, 0) 100%
+    ),
+    url("../images/donation3.jpg"); */
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100vh;
+  background-position: center;
+  background-color: rgba(0, 0, 0, 0.3);
+  background-blend-mode: overlay;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.banner-title {
+  font-family: "Inter", sans-serif;
+  color: white;
+  font-weight: 700;
+  font-size: 4rem;
+  text-align: center;
+}
+
+.banner-container .description {
+  color: white;
+}
+
+/* banner design ends here */
+
+/* main design starts here */
+.container {
+  max-width: 1240px;
+  margin: 0 auto;
+  margin-top: 100px;
+  /* border: 2px solid red; */
+}
+
+/* donate today section starts here */
+.donate-today-section {
+  max-width: 800px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  /* border: 2px solid red; */
+}
+
+.amount {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 10px;
+  margin-bottom: 30px;
+}
+
+.tk-100,
+.tk-200 {
+  width: 135px;
+  height: 123px;
+  border-radius: 5px;
+  background: rgb(250, 250, 250);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 30px;
+}
+
+.amount h3 {
+  font-size: 1.5rem;
+}
+
+.tk-200 {
+  border: 2px solid rgb(255, 89, 89);
+  border-radius: 5px;
+  background: rgb(255, 238, 238);
+}
+
+.donate-inp {
+  width: 90%;
+  border: none;
+  border-bottom: 1px solid rgb(218, 218, 218);
+  text-align: center;
+  color: rgb(179, 179, 179);
+  font-family: Poppins;
+  font-size: 16px;
+  font-weight: 400;
+}
+/* donate today section ends here */
+
+/* donate plan section starts here */
+.donate-plan-section {
+  max-width: 1240px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  /* border: 2px solid red; */
+  margin-top: 100px;
+}
+
+.basic-rights-card {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+}
+
+.basic-rights-card img {
+  width: 55.13px;
+  height: 42.44px;
+}
+
+.card-title {
+  color: rgb(18, 18, 18);
+  font-family: "Poppins", sans-serif;
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+.card-description {
+  color: rgb(112, 112, 112);
+  font-family: "Poppins", sans-serif;
+  font-size: 1rem;
+  font-weight: 400;
+}
+.food {
+  width: 360px;
+  height: 352px;
+  border-radius: 5px;
+  background: rgba(79, 157, 166, 0.1);
+}
+
+.shelter {
+  width: 360px;
+  height: 352px;
+  border-radius: 5px;
+  background: rgba(255, 89, 89, 0.1);
+}
+
+.education {
+  width: 360px;
+  height: 352px;
+  border-radius: 5px;
+  background: rgba(165, 163, 113, 0.2);
+}
+
+/* donate plan section ends here */
+
+/* blog section starts here */
+.blog-section {
+  max-width: 1140px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  /* border: 2px solid red; */
+  margin-top: 100px;
+}
+
+.blog-img img {
+  width: 456px;
+  height: 477px;
+  border-radius: 8px;
+}
+
+.blog-1 {
+  display: flex;
+  justify-content: center;
+  align-items: left;
+}
+
+.blog-2 {
+  display: flex;
+  justify-content: center;
+  align-items: right;
+  margin-top: 80px;
+  margin-left: 50px;
+}
+
+.blog-text {
+  margin-top: 50px;
+}
+
+.blog-2 .blog-text {
+  margin-left: 50px;
+  margin-top: 50px;
+}
+
+.blog-text .description {
+  text-align: left;
+  margin-left: 0;
+}
+
+.blog-text .btn-primary {
+  width: 200px;
+}
+
+/* blog section ends here */
+
+/* my update section starts here */
+.my-update-section {
+  max-width: 809px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin: 0 auto;
+  margin-top: 100px;
+}
+
+.mail {
+  /* border: 2px solid red; */
+  width: 809px;
+  height: 200px;
+  background: rgb(255, 244, 214);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0;
+  padding: 10px;
+}
+
+#mail-id {
+  width: 70%;
+  margin: 0 auto;
+  height: 50px;
+  margin-top: 33px;
+  margin-left: 50px;
+  padding: 10px;
+  font-size: 1rem;
+}
+
+.mail .btn-primary {
+  margin-right: 45px;
+}
+/* my update section ends here */
+
+/* footer section starts here */
+.footer-container {
+  width: 1380px;
+  height: 177px;
+  background: rgb(11, 13, 23);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  border-radius: 8px;
+  margin-top: 100px;
+}
+
+.footer-container h4 {
+  color: rgb(255, 89, 89);
+  font-family: "Lobster", "sans-serif";
+  font-size: 2rem;
+  font-weight: 400;
+}
+
+.footer-container p {
+  color: rgb(217, 219, 225);
+  font-size: 0.9rem;
+  margin-top: 20px;
+}
+/* footer section ends here */
+
+/* main design ends here */
+
+/* responsive for small screens */
+@media screen and (max-width: 576px) {
+  .banner-title {
+    font-size: 2rem;
+  }
+  .description {
+    width: 80%;
+  }
+
+  .amount {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .basic-rights-card {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .blog-1 {
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+
+  .blog-2 {
+    flex-direction: column;
+    align-items: center;
+    margin-left: 0;
+  }
+
+  .title {
+    font-size: 1.8rem;
+  }
+
+  .card-title {
+    font-size: 1.3rem;
+  }
+
+  .card-description,
+  .description {
+    font-size: 0.9rem;
+  }
+
+  .blog-text .description {
+    font-size: 1rem;
+    text-align: center;
+    margin: auto;
+    margin-top: 20px;
+    font-size: 0.9rem;
+  }
+
+  .blog-text {
+    width: 100%;
+    text-align: center;
+  }
+
+  .blog-img img {
+    margin: 0;
+    width: 100%;
+    height: 200px;
+  }
+
+  .blog-2 .blog-text {
+    margin-left: -10px;
+  }
+
+  .mail {
+    max-width: 90%;
+    flex-direction: column;
+  }
+
+  #mail-id {
+    width: 90%;
+    margin: 0 auto;
+  }
+
+  .mail .btn-primary {
+    margin: 0 auto;
+    margin-top: 20px;
+  }
+
+  .footer-container {
+    width: 100%;
+  }
+}
