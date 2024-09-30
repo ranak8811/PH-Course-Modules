@@ -1,0 +1,33 @@
+.junior-program {
+  background-image: linear-gradient(
+      45deg,
+      rgba(0, 0, 0, 0.7),
+      rgba(0, 0, 0, 0.2)
+    ),
+    url("../images/2.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.senior-program {
+  background-image: linear-gradient(
+      45deg,
+      rgba(0, 0, 0, 0.7),
+      rgba(0, 0, 0, 0.2)
+    ),
+    url("../images/3.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.professional-program {
+  background-image: linear-gradient(
+      45deg,
+      rgba(0, 0, 0, 0.7),
+      rgba(0, 0, 0, 0.2)
+    ),
+    url("../images/4.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}

@@ -1,0 +1,744 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hockey Tournament</title>
+
+    <!-- daisy ui and tailwind cdn -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+
+    <!-- css file connect -->
+    <link rel="stylesheet" href="./styles/style.css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- font awesome cdn -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <!-- header starts here -->
+    <header class="container mx-auto">
+      <!-- navbar part -->
+      <div class="navbar bg-base-100">
+        <div class="navbar-start">
+          <div class="dropdown">
+            <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="h-5 w-5"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M4 6h16M4 12h8m-8 6h16"
+                />
+              </svg>
+            </div>
+            <ul
+              tabindex="0"
+              class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow"
+            >
+              <li><a>Home</a></li>
+              <li><a>About</a></li>
+              <li><a>Pages</a></li>
+              <li><a>Blog</a></li>
+              <li><a>Contact</a></li>
+            </ul>
+          </div>
+          <a class="btn btn-ghost text-4xl font-bold"
+            >Hockey<span class="text-red-600">’</span>s</a
+          >
+        </div>
+        <div class="navbar-center hidden lg:flex">
+          <ul class="menu menu-horizontal px-1 font-[400] text-sm">
+            <li class="hover:text-red-500 duration-300 ease-in-out">
+              <a>Home</a>
+            </li>
+            <li class="hover:text-red-500 duration-300 ease-in-out">
+              <a>About</a>
+            </li>
+            <li class="hover:text-red-500 duration-300 ease-in-out">
+              <a>Pages</a>
+            </li>
+            <li class="hover:text-red-500 duration-300 ease-in-out">
+              <a>Blog</a>
+            </li>
+            <li class="hover:text-red-500 duration-300 ease-in-out">
+              <a>Contact</a>
+            </li>
+          </ul>
+        </div>
+        <div class="navbar-end flex space-x-6">
+          <h6><i class="fa-solid fa-magnifying-glass"></i></h6>
+          <a class="btn btn-error text-white text-xl">Get Ticket</a>
+        </div>
+      </div>
+
+      <!-- banner part -->
+      <div class="relative px-6 lg:px-0 my-5 space-y-4 lg:space-y-0">
+        <div class="carousel w-full">
+          <div id="slide1" class="carousel-item relative w-full">
+            <img src="./images/1.png" class="w-full" />
+            <div
+              class="absolute bottom-6 left-6 flex space-x-3 justify-between"
+            >
+              <a href="#slide4" class="btn btn-circle bg-slate-800 text-white"
+                >❮</a
+              >
+              <a href="#slide2" class="btn btn-circle bg-slate-800 text-white"
+                >❯</a
+              >
+            </div>
+          </div>
+
+          <div id="slide2" class="carousel-item relative w-full">
+            <img src="./images/2.png" class="w-full" />
+            <div
+              class="absolute bottom-6 left-6 flex space-x-3 justify-between"
+            >
+              <a href="#slide1" class="btn btn-circle bg-slate-800 text-white"
+                >❮</a
+              >
+              <a href="#slide3" class="btn btn-circle bg-slate-800 text-white"
+                >❯</a
+              >
+            </div>
+          </div>
+
+          <div id="slide3" class="carousel-item relative w-full">
+            <img src="./images/3.png" class="w-full" />
+            <div
+              class="absolute bottom-6 left-6 flex space-x-3 justify-between"
+            >
+              <a href="#slide2" class="btn btn-circle bg-slate-800 text-white"
+                >❮</a
+              >
+              <a href="#slide4" class="btn btn-circle bg-slate-800 text-white"
+                >❯</a
+              >
+            </div>
+          </div>
+
+          <div id="slide4" class="carousel-item relative w-full">
+            <img src="./images/4.png" class="w-full" />
+            <div
+              class="absolute bottom-6 left-6 flex space-x-3 justify-between"
+            >
+              <a href="#slide3" class="btn btn-circle bg-slate-800 text-white"
+                >❮</a
+              >
+              <a href="#slide1" class="btn btn-circle bg-slate-800 text-white"
+                >❯</a
+              >
+            </div>
+          </div>
+        </div>
+
+        <!-- text box -->
+        <div
+          class="lg:absolute lg:w-1/3 bg-slate-900 text-white py-12 px-6 rounded-md space-y-4 bottom-12 right-12"
+        >
+          <h5 class="text-2xl font-semibold">
+            Meet all the heroes from the field
+          </h5>
+          <p class="text-sm text-gray-200">
+            Dit amet consectetur. Condimentum dignissim adipiscing aliquam
+            turpis placerat dolor. Purus urna in sit nullam proin.
+          </p>
+        </div>
+      </div>
+    </header>
+    <!-- header ends here -->
+
+    <!-- main starts here -->
+    <main class="container mx-auto px-12 lg:px-0">
+      <!-- stat section starts here -->
+      <section class="mt-24">
+        <!-- text part -->
+        <div class="border-y-[2px] border-dashed py-12 text-center">
+          <h2 class="text-4xl font-bold mb-3">Professional Hockeys Club</h2>
+          <p class="opacity-80 w-5/6 md:w-1/2 mx-auto">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur
+            deserunt nesciunt consequuntur neque atque.
+          </p>
+        </div>
+
+        <!-- start part -->
+
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 mt-10">
+          <div class="flex flex-col justify-center items-center py-6 space-y-3">
+            <div class="relative">
+              <div
+                class="radial-progress text-[#FF4240] z-10"
+                style="--value: 87"
+                role="progressbar"
+              >
+                87%
+              </div>
+              <div
+                class="absolute top-0 left-0 radial-progress text-slate-300"
+                style="--value: 100"
+                role="progressbar"
+              ></div>
+            </div>
+
+            <h6 class="text-xl font-semibold">Prayer Facility</h6>
+            <p class="w-5/6 opacity-70 text-center">
+              Amet consectetur. Condimentum dignissim adipiscing .
+            </p>
+          </div>
+          <div class="flex flex-col justify-center items-center py-6 space-y-3">
+            <div class="relative">
+              <div
+                class="radial-progress text-[#3413eb] z-10"
+                style="--value: 95"
+                role="progressbar"
+              >
+                95%
+              </div>
+              <div
+                class="absolute top-0 left-0 radial-progress text-slate-300"
+                style="--value: 100"
+                role="progressbar"
+              ></div>
+            </div>
+
+            <h6 class="text-xl font-semibold">Prayer Facility</h6>
+            <p class="w-5/6 opacity-70 text-center">
+              Amet consectetur. Condimentum dignissim adipiscing .
+            </p>
+          </div>
+          <div class="flex flex-col justify-center items-center py-6 space-y-3">
+            <div class="relative">
+              <div
+                class="radial-progress text-[#30ec7b] z-10"
+                style="--value: 90"
+                role="progressbar"
+              >
+                90%
+              </div>
+              <div
+                class="absolute top-0 left-0 radial-progress text-slate-300"
+                style="--value: 100"
+                role="progressbar"
+              ></div>
+            </div>
+
+            <h6 class="text-xl font-semibold">Prayer Facility</h6>
+            <p class="w-5/6 opacity-70 text-center">
+              Amet consectetur. Condimentum dignissim adipiscing .
+            </p>
+          </div>
+          <div class="flex flex-col justify-center items-center py-6 space-y-3">
+            <div class="relative">
+              <div
+                class="radial-progress text-[#c940ff] z-10"
+                style="--value: 91"
+                role="progressbar"
+              >
+                91%
+              </div>
+              <div
+                class="absolute top-0 left-0 radial-progress text-slate-300"
+                style="--value: 100"
+                role="progressbar"
+              ></div>
+            </div>
+
+            <h6 class="text-xl font-semibold">Prayer Facility</h6>
+            <p class="w-5/6 opacity-70 text-center">
+              Amet consectetur. Condimentum dignissim adipiscing .
+            </p>
+          </div>
+        </div>
+      </section>
+      <!-- stat section ends here -->
+
+      <!-- programs section starts here -->
+      <section class="mt-24">
+        <!-- text part -->
+        <div class="border-y-[2px] border-dashed py-12 text-center">
+          <h2 class="text-4xl font-bold mb-3">Program Sections</h2>
+          <p class="opacity-80 w-5/6 md:w-1/2 mx-auto">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur
+            deserunt nesciunt consequuntur neque atque.
+          </p>
+        </div>
+
+        <!-- image part -->
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-6 mt-12">
+          <div
+            class="rounded-lg w-full junior-program flex flex-col justify-end items-center p-12 lg:p-24 text-white"
+          >
+            <div class="space-y-3">
+              <h5 class="text-2xl font-semibold">Junior Program</h5>
+              <p class="w-5/6">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor,
+                amet non? Aut, porro architecto.
+              </p>
+              <button class="btn btn-error text-white">Register Now!</button>
+            </div>
+          </div>
+
+          <div
+            class="rounded-lg w-full senior-program flex flex-col justify-end items-center p-12 lg:p-24 text-white"
+          >
+            <div class="space-y-3">
+              <h5 class="text-2xl font-semibold">Senior Program</h5>
+              <p class="w-5/6">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor,
+                amet non? Aut, porro architecto.
+              </p>
+              <button class="btn btn-error text-white">Register Now!</button>
+            </div>
+          </div>
+
+          <div
+            class="lg:col-span-2 rounded-lg w-full professional-program flex flex-col justify-end lg:justify-start items-center p-12 lg:p-24 text-white"
+          >
+            <div class="space-y-3">
+              <h5 class="text-2xl font-semibold">Professional Program</h5>
+              <p class="w-5/6">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor,
+                amet non? Aut, porro architecto.
+              </p>
+              <button class="btn btn-error text-white">Register Now!</button>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- programs section ends here -->
+
+      <!-- product section starts here -->
+      <section class="mt-24">
+        <!-- text part -->
+        <div class="border-y-[2px] border-dashed py-12 text-center">
+          <h2 class="text-4xl font-bold mb-3">Our New Products</h2>
+          <p class="opacity-80 w-5/6 md:w-1/2 mx-auto">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur
+            deserunt nesciunt consequuntur neque atque.
+          </p>
+        </div>
+
+        <!-- product part -->
+        <div class="mt-12 grid grid-cols-1 lg:grid-cols-2 gap-6 items-center">
+          <div class="border rounded-lg p-6 flex space-x-6">
+            <div>
+              <img src="./images/5.png" alt="" />
+            </div>
+
+            <!-- icon part -->
+            <div class="w-full space-y-3">
+              <div class="flex items-center justify-start space-x-9 w-full">
+                <div class="flex items-center space-x-3">
+                  <h6>
+                    <i class="fa-solid fa-star text-yellow-400 text-xl"></i>
+                  </h6>
+                  <h6>5.0</h6>
+                </div>
+                <div class="flex items-center space-x-3">
+                  <h6><i class="fa-regular fa-eye"></i></h6>
+                  <h6>20</h6>
+                </div>
+                <div class="flex items-center space-x-3">
+                  <h6><i class="fa-regular fa-heart"></i></h6>
+                  <h6>200</h6>
+                </div>
+              </div>
+
+              <!-- text part -->
+              <div>
+                <h5 class="text-lg font-bold">World Cup Flags Football</h5>
+                <p class="opacity-80">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Laboriosam, laborum.
+                </p>
+              </div>
+
+              <div class="flex items-center justify-between">
+                <h6 class="text-red-600">Price - $22.00</h6>
+                <h6 class="text-red-600">Delivery Fee : Free</h6>
+              </div>
+            </div>
+          </div>
+
+          <div class="border rounded-lg p-6 flex space-x-6">
+            <div>
+              <img src="./images/5.png" alt="" />
+            </div>
+
+            <!-- icon part -->
+            <div class="w-full space-y-3">
+              <div class="flex items-center justify-start space-x-9 w-full">
+                <div class="flex items-center space-x-3">
+                  <h6>
+                    <i class="fa-solid fa-star text-yellow-400 text-xl"></i>
+                  </h6>
+                  <h6>5.0</h6>
+                </div>
+                <div class="flex items-center space-x-3">
+                  <h6><i class="fa-regular fa-eye"></i></h6>
+                  <h6>20</h6>
+                </div>
+                <div class="flex items-center space-x-3">
+                  <h6><i class="fa-regular fa-heart"></i></h6>
+                  <h6>200</h6>
+                </div>
+              </div>
+
+              <!-- text part -->
+              <div>
+                <h5 class="text-lg font-bold">World Cup Flags Football</h5>
+                <p class="opacity-80">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Laboriosam, laborum.
+                </p>
+              </div>
+
+              <div class="flex items-center justify-between">
+                <h6 class="text-red-600">Price - $22.00</h6>
+                <h6 class="text-red-600">Delivery Fee : Free</h6>
+              </div>
+            </div>
+          </div>
+
+          <div class="border rounded-lg p-6 flex space-x-6">
+            <div>
+              <img src="./images/5.png" alt="" />
+            </div>
+
+            <!-- icon part -->
+            <div class="w-full space-y-3">
+              <div class="flex items-center justify-start space-x-9 w-full">
+                <div class="flex items-center space-x-3">
+                  <h6>
+                    <i class="fa-solid fa-star text-yellow-400 text-xl"></i>
+                  </h6>
+                  <h6>5.0</h6>
+                </div>
+                <div class="flex items-center space-x-3">
+                  <h6><i class="fa-regular fa-eye"></i></h6>
+                  <h6>20</h6>
+                </div>
+                <div class="flex items-center space-x-3">
+                  <h6><i class="fa-regular fa-heart"></i></h6>
+                  <h6>200</h6>
+                </div>
+              </div>
+
+              <!-- text part -->
+              <div>
+                <h5 class="text-lg font-bold">World Cup Flags Football</h5>
+                <p class="opacity-80">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Laboriosam, laborum.
+                </p>
+              </div>
+
+              <div class="flex items-center justify-between">
+                <h6 class="text-red-600">Price - $22.00</h6>
+                <h6 class="text-red-600">Delivery Fee : Free</h6>
+              </div>
+            </div>
+          </div>
+
+          <div class="border rounded-lg p-6 flex space-x-6">
+            <div>
+              <img src="./images/5.png" alt="" />
+            </div>
+
+            <!-- icon part -->
+            <div class="w-full space-y-3">
+              <div class="flex items-center justify-start space-x-9 w-full">
+                <div class="flex items-center space-x-3">
+                  <h6>
+                    <i class="fa-solid fa-star text-yellow-400 text-xl"></i>
+                  </h6>
+                  <h6>5.0</h6>
+                </div>
+                <div class="flex items-center space-x-3">
+                  <h6><i class="fa-regular fa-eye"></i></h6>
+                  <h6>20</h6>
+                </div>
+                <div class="flex items-center space-x-3">
+                  <h6><i class="fa-regular fa-heart"></i></h6>
+                  <h6>200</h6>
+                </div>
+              </div>
+
+              <!-- text part -->
+              <div>
+                <h5 class="text-lg font-bold">World Cup Flags Football</h5>
+                <p class="opacity-80">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Laboriosam, laborum.
+                </p>
+              </div>
+
+              <div class="flex items-center justify-between">
+                <h6 class="text-red-600">Price - $22.00</h6>
+                <h6 class="text-red-600">Delivery Fee : Free</h6>
+              </div>
+            </div>
+          </div>
+
+          <div class="border rounded-lg p-6 flex space-x-6">
+            <div>
+              <img src="./images/5.png" alt="" />
+            </div>
+
+            <!-- icon part -->
+            <div class="w-full space-y-3">
+              <div class="flex items-center justify-start space-x-9 w-full">
+                <div class="flex items-center space-x-3">
+                  <h6>
+                    <i class="fa-solid fa-star text-yellow-400 text-xl"></i>
+                  </h6>
+                  <h6>5.0</h6>
+                </div>
+                <div class="flex items-center space-x-3">
+                  <h6><i class="fa-regular fa-eye"></i></h6>
+                  <h6>20</h6>
+                </div>
+                <div class="flex items-center space-x-3">
+                  <h6><i class="fa-regular fa-heart"></i></h6>
+                  <h6>200</h6>
+                </div>
+              </div>
+
+              <!-- text part -->
+              <div>
+                <h5 class="text-lg font-bold">World Cup Flags Football</h5>
+                <p class="opacity-80">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Laboriosam, laborum.
+                </p>
+              </div>
+
+              <div class="flex items-center justify-between">
+                <h6 class="text-red-600">Price - $22.00</h6>
+                <h6 class="text-red-600">Delivery Fee : Free</h6>
+              </div>
+            </div>
+          </div>
+
+          <div class="border rounded-lg p-6 flex space-x-6">
+            <div>
+              <img src="./images/5.png" alt="" />
+            </div>
+
+            <!-- icon part -->
+            <div class="w-full space-y-3">
+              <div class="flex items-center justify-start space-x-9 w-full">
+                <div class="flex items-center space-x-3">
+                  <h6>
+                    <i class="fa-solid fa-star text-yellow-400 text-xl"></i>
+                  </h6>
+                  <h6>5.0</h6>
+                </div>
+                <div class="flex items-center space-x-3">
+                  <h6><i class="fa-regular fa-eye"></i></h6>
+                  <h6>20</h6>
+                </div>
+                <div class="flex items-center space-x-3">
+                  <h6><i class="fa-regular fa-heart"></i></h6>
+                  <h6>200</h6>
+                </div>
+              </div>
+
+              <!-- text part -->
+              <div>
+                <h5 class="text-lg font-bold">World Cup Flags Football</h5>
+                <p class="opacity-80">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Laboriosam, laborum.
+                </p>
+              </div>
+
+              <div class="flex items-center justify-between">
+                <h6 class="text-red-600">Price - $22.00</h6>
+                <h6 class="text-red-600">Delivery Fee : Free</h6>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- product section ends here -->
+
+      <!-- faq section starts here -->
+      <section class="mt-24"></section>
+      <!-- faq section ends here -->
+
+      <!-- get in touch section starts here -->
+      <section class="mt-24">
+        <!-- text part -->
+        <div class="border-y-[2px] border-dashed py-12 text-center">
+          <h2 class="text-4xl font-bold mb-3">Get In Touch</h2>
+          <p class="opacity-80 w-5/6 md:w-1/2 mx-auto">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur
+            deserunt nesciunt consequuntur neque atque.
+          </p>
+        </div>
+
+        <!-- grid part -->
+
+        <div class="grid grid-cols-1 lg:grid-cols-3 gap-12 mt-12">
+          <div class="border rounded-lg p-6 space-y-6">
+            <div class="bg-green-100 rounded-lg p-6">
+              <img src="./images/Group 1171275317.png" alt="" />
+              <p>Phone Number :</p>
+              <h6>(+62) 123-321-543</h6>
+            </div>
+
+            <div class="bg-yellow-100 rounded-lg p-6">
+              <img src="./images/Group 1171275318.png" alt="" />
+              <p>Email :</p>
+              <h6>abc@gmai.com</h6>
+            </div>
+
+            <div class="bg-blue-100 rounded-lg p-6">
+              <img src="./images/Group 1171275321.png" alt="" />
+              <p>Location :</p>
+              <h6>15/2 Mohakhali Wireless Gate</h6>
+            </div>
+          </div>
+
+          <div class="lg:col-span-2">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-6">
+              <div>
+                <label class="text-lg font-semibold" for="name"
+                  >Your Name</label
+                >
+                <br /><input
+                  class="p-4 mt-3 border-none outline-none bg-slate-100 rounded-lg w-full"
+                  type="text"
+                  placeholder="Enter your full name"
+                />
+              </div>
+              <div>
+                <label class="text-lg font-semibold" for="name"
+                  >Your Email</label
+                >
+                <br /><input
+                  class="p-4 mt-3 border-none outline-none bg-slate-100 rounded-lg w-full"
+                  type="email"
+                  placeholder="Enter your email"
+                />
+              </div>
+              <div>
+                <label class="text-lg font-semibold" for="name">Subject</label>
+                <br /><input
+                  class="p-4 mt-3 border-none outline-none bg-slate-100 rounded-lg w-full"
+                  type="text"
+                  placeholder="Enter your subject name"
+                />
+              </div>
+              <div>
+                <label class="text-lg font-semibold" for="name"
+                  >Phone number</label
+                >
+                <br /><input
+                  class="p-4 mt-3 border-none outline-none bg-slate-100 rounded-lg w-full"
+                  type="email"
+                  placeholder="Enter your Phone number"
+                />
+              </div>
+
+              <div class="lg:col-span-2">
+                <label class="text-lg font-semibold" for="name">Message</label>
+                <br /><textarea
+                  class="p-4 mt-3 border-none outline-none bg-slate-100 rounded-lg w-full resize-none"
+                  rows="7"
+                  type="email"
+                  placeholder="Write your message"
+                >
+                </textarea>
+              </div>
+
+              <button class="btn btn-error lg:col-span-2 text-white">
+                Send Message
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- get in touch section ends here -->
+    </main>
+    <!-- main ends here -->
+
+    <!-- footer starts here -->
+    <footer class="bg-black mt-24">
+      <div
+        class="container mx-auto grid grid-cols-1 md:grid-cols-4 gap-12 text-white"
+      >
+        <div class="space-y-6 my-12">
+          <h4 class="text-xl font-semibold">Get In Touch</h4>
+          <p class="opacity-70">
+            Dit amet consectetur. Condimentum adipiscing aliquam turpis placerat
+            dolor. Purus urna in sit nullam proin.
+          </p>
+
+          <div>
+            <div class="flex gap-3 items-center">
+              <i class="fa-regular fa-envelope text-red-500"></i>
+              <h6 class="opacity-70">hockeys@support.com</h6>
+            </div>
+
+            <div class="flex gap-3 items-center">
+              <i class="fa-solid fa-phone text-red-500"></i>
+              <h6 class="opacity-70">(+62) 123-321-543</h6>
+            </div>
+          </div>
+        </div>
+
+        <div class="my-12">
+          <h6 class="text-sm font-bold mb-5">Company</h6>
+          <ul class="space-y-3">
+            <li class="opacity-70 text-sm">About Us</li>
+            <li class="opacity-70 text-sm">Leadership</li>
+            <li class="opacity-70 text-sm">Careers</li>
+            <li class="opacity-70 text-sm">News article</li>
+            <li class="opacity-70 text-sm">Legal Notice</li>
+          </ul>
+        </div>
+
+        <div class="my-12">
+          <h6 class="text-sm font-bold mb-5">Support</h6>
+          <ul class="space-y-3">
+            <li class="opacity-70 text-sm">About Us</li>
+            <li class="opacity-70 text-sm">Leadership</li>
+            <li class="opacity-70 text-sm">Careers</li>
+            <li class="opacity-70 text-sm">News article</li>
+            <li class="opacity-70 text-sm">Legal Notice</li>
+          </ul>
+        </div>
+        <div class="my-12">
+          <h6 class="text-sm font-bold mb-5">Services</h6>
+          <ul class="space-y-3">
+            <li class="opacity-70 text-sm">About Us</li>
+            <li class="opacity-70 text-sm">Leadership</li>
+            <li class="opacity-70 text-sm">Careers</li>
+            <li class="opacity-70 text-sm">News article</li>
+            <li class="opacity-70 text-sm">Legal Notice</li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+    <!-- footer ends here -->
+  </body>
+</html>
