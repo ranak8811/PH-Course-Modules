@@ -1,0 +1,593 @@
+/* google fonts */
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap");
+
+/* CSS Variables */
+:root {
+  --main-bg-color: #111111;
+  --accent-color: #e6533c;
+  --text-color: white;
+  --dark-bg-color: #222222;
+  --light-bg-color: rgba(255, 255, 255, 0.1);
+  --font-main: "Inter", sans-serif;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  max-width: 1380px;
+  margin: 0 auto;
+  font-family: var(--font-main);
+  background-color: var(--main-bg-color);
+  color: var(--text-color);
+}
+
+/* common section design starts here */
+.orange-text {
+  color: var(--accent-color);
+  font-style: italic;
+  font-size: 2rem;
+}
+
+.btn-primary {
+  background-color: var(--accent-color);
+  font-size: 1rem;
+  width: 190px;
+  height: 40px;
+  border: none;
+  border-radius: 2.5rem;
+  color: var(--text-color);
+}
+
+.main-title {
+  font-size: 3rem;
+  font-weight: 800;
+  line-height: 140%;
+}
+
+.sub-title {
+  font-size: 1.9rem;
+  font-weight: 600;
+}
+
+.desc {
+  width: 80%;
+  line-height: 140%;
+  font-size: 0.9rem;
+  font-weight: 400;
+  opacity: 0.7;
+}
+
+.display-flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.display-flex-column {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+/* common section design ends here */
+
+/* header section design starts here */
+.header-container {
+  height: 100vh;
+  margin-top: 30px;
+  padding: 20px;
+}
+
+/* navbar section design starts here */
+.nav-bar {
+  justify-content: space-between;
+}
+
+.nav-bar ul {
+  gap: 35px;
+  border: 1px solid var(--text-color);
+  border-radius: 30px;
+  padding: 5px;
+}
+
+.nav-bar ul li {
+  list-style: none;
+}
+
+#home-btn {
+  background-color: var(--accent-color);
+  border-radius: 30px;
+  padding: 5px 13px;
+}
+
+.bar {
+  display: none;
+}
+
+/* navbar section design ends here */
+
+/* banner section design starts here */
+.banner-container {
+  justify-content: space-between;
+  gap: 200px;
+  margin-top: 50px;
+}
+
+.banner-text,
+.banner-img {
+  width: 50%;
+}
+
+.style-text {
+  font-style: oblique;
+  color: yellow;
+}
+
+.banner-text .desc {
+  margin: 40px 0;
+}
+
+.btns {
+  justify-content: flex-start;
+  gap: 20px;
+}
+
+#download-btn {
+  background-color: var(--main-bg-color);
+  color: var(--text-color);
+  font-size: 1rem;
+  width: 190px;
+  height: 40px;
+  border: 1px solid var(--text-color);
+  border-radius: 2.5rem;
+}
+
+.resource-1,
+.resource-2 {
+  width: 170px;
+  height: 80px;
+  background-color: var(--light-bg-color);
+  backdrop-filter: blur(2px);
+  border-radius: 1rem;
+}
+
+.resource-1 {
+  position: absolute;
+  left: 70px;
+  bottom: 100px;
+  gap: 10px;
+}
+
+.resource-2 {
+  position: absolute;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 15px;
+  top: 120px;
+  right: 100px;
+}
+
+.red-dot {
+  width: 30px;
+  height: 30px;
+  background-color: red;
+  border-radius: 50%;
+}
+
+.resource-1 .desc {
+  width: 100px;
+}
+
+.resource-1 .desc,
+.resource-2 .desc {
+  font-size: 0.7rem;
+}
+
+/* banner section design ends here */
+/* header section design ends here */
+
+/* main section design starts here */
+/* change your habit section design starts here */
+.change-your-habits-section {
+  padding: 20px;
+}
+
+.habit-text {
+  width: 60%;
+  margin: 0 auto;
+  text-align: center;
+  flex-direction: column;
+}
+
+.habit-text .desc {
+  margin-top: 18px;
+}
+
+.habits {
+  margin-top: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.movement img {
+  border-radius: 50%;
+}
+
+.habits-title {
+  margin-top: 15px;
+}
+
+.display-flex-column .desc {
+  margin-top: 10px;
+  text-align: center;
+}
+
+/* change your habit section design ends here */
+
+/* run section design starts here */
+.run-section {
+  width: 90%;
+  border-radius: 18px;
+  background: var(--dark-bg-color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 100px;
+  margin: 0 auto;
+  margin-top: 50px;
+  padding: 30px;
+}
+
+.run-text {
+  width: 50%;
+}
+
+.run-text .desc {
+  margin: 20px 0;
+}
+
+.run-img {
+  width: 50%;
+}
+
+.run-img img {
+  width: 100%;
+  border-radius: 18px;
+}
+
+/* run section design ends here */
+
+/* bmi calculator section design starts here */
+.bmi-calculator-section {
+  margin-top: 40px;
+}
+
+.bmi-text {
+  width: 50%;
+  margin: 0 auto;
+}
+
+.calculator-container {
+  padding: 20px;
+  background: var(--dark-bg-color);
+  margin-top: 30px;
+  display: flex;
+  gap: 150px;
+}
+
+.chart {
+  width: 40%;
+}
+
+.calculator-box {
+  width: 60%;
+}
+
+table {
+  border-collapse: collapse;
+}
+
+td,
+th {
+  border: 1px solid var(--text-color);
+  padding: 5px 10px;
+}
+
+th {
+  text-align: left;
+}
+
+.box {
+  border-radius: 8px;
+  background: var(--light-bg-color);
+  padding: 10px;
+  border: none;
+}
+
+.calculator {
+  display: grid;
+  gap: 8px;
+  margin-top: 30px;
+  grid-template-areas:
+    "height weight"
+    "age sex";
+}
+
+select option {
+  color: var(--text-color);
+}
+
+.height,
+.weight,
+.age,
+.sex {
+  width: 300px;
+  padding: 15px 20px;
+}
+
+.activity {
+  width: 610px;
+  margin-top: 8px;
+  border-radius: 8px;
+}
+
+.activity select {
+  width: 100%;
+  padding: 15px 20px;
+}
+
+.height {
+  grid-area: height;
+}
+
+.weight {
+  grid-area: weight;
+}
+
+.age {
+  grid-area: age;
+}
+
+.sex {
+  grid-area: sex;
+}
+
+.calculate-btn {
+  margin-top: 30px;
+  margin-left: -410px;
+}
+
+/* bmi calculator section design ends here */
+
+/* meet our team design starts here */
+.team-text {
+  width: 60%;
+  margin: 0 auto;
+  margin-top: 100px;
+}
+
+.team-text .sub-title,
+.team-text .desc {
+  margin: 0 auto;
+  text-align: center;
+}
+
+.team-text .desc {
+  margin-top: 25px;
+}
+
+.team-container {
+  background: var(--dark-bg-color);
+  border-radius: 20px;
+  width: 80%;
+  margin: 0 auto;
+  padding: 20px;
+  margin-top: 30px;
+
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 15px;
+}
+
+.trainer-1 {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.trainer-1 img {
+  width: 345px;
+  height: 345px;
+  border-radius: 20px;
+  filter: brightness(0.7);
+}
+
+.t-name {
+  position: absolute;
+  left: 25px;
+  bottom: 25px;
+}
+
+/* meet our team design ends here */
+/* main section design ends here */
+
+/* footer section design starts here */
+.footer-container {
+  background: var(--dark-bg-color);
+  margin-top: 80px;
+}
+
+.footer-content {
+  width: 80%;
+  margin: 0 auto;
+  justify-content: space-between;
+  padding: 50px;
+}
+
+.footer-content ul {
+  gap: 20px;
+}
+
+.footer-content ul li {
+  list-style: none;
+}
+
+.footer-content ul li a {
+  text-decoration: none;
+  font-size: 0.8rem;
+  color: var(--text-color);
+}
+
+.footer-title {
+  font-size: 1.7rem;
+}
+
+.desc .footer-desc {
+  font-size: 0.8rem;
+}
+
+.footer-bottom {
+  background-color: var(--light-bg-color);
+  margin-top: 50px;
+}
+
+.footer-bottom-container {
+  padding: 20px;
+  justify-content: space-between;
+}
+
+.line {
+  width: 20%;
+  height: 2px;
+  background: var(--text-color);
+  border-radius: 5px;
+}
+
+.copyright {
+  font-size: 0.8rem;
+  font-weight: 400;
+}
+
+/* footer section design ends here */
+
+/* responsive design starts here */
+@media (max-width: 1000px) {
+  .banner-container,
+  .run-section,
+  .calculator-container {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .run-section,
+  .calculator-container {
+    padding: 20px;
+  }
+
+  .habits {
+    flex-direction: column;
+  }
+
+  .run-text,
+  .run-img,
+  .calculator-box,
+  .chart {
+    width: 100%;
+  }
+
+  .activity {
+    width: 300px;
+  }
+
+  .habit-text .desc {
+    margin: 20px 0;
+  }
+
+  .resource-1 {
+    position: static;
+  }
+
+  .resource-2 {
+    position: static;
+  }
+
+  .calculate-btn {
+    margin-left: 0;
+  }
+}
+
+@media (max-width: 720px) {
+  .nav-bar {
+    display: none;
+  }
+
+  .bar {
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  .nav-bar ul {
+    gap: 15px;
+    padding: 3px;
+  }
+
+  .nav-bar ul li {
+    list-style: none;
+    padding: 5px;
+  }
+
+  .banner-container {
+    gap: 20px;
+  }
+
+  .banner-text,
+  .banner-img {
+    width: 100%;
+  }
+
+  .resource-1,
+  .resource-2 {
+    flex-direction: column;
+  }
+
+  .btns {
+    gap: 10px;
+  }
+
+  .team-container {
+    grid-template-columns: 1fr;
+  }
+
+  .team-text {
+    width: 100%;
+    margin-top: 50px;
+  }
+
+  .team-text .desc {
+    font-size: 0.8rem;
+  }
+
+  .footer-content {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .footer-content ul {
+    gap: 10px;
+  }
+
+  .footer-bottom-container {
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+}
+
+/* responsive design ends here */
