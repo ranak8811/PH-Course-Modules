@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Donate Bangladesh</title>
+
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- font awesome cdn -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <!-- daisy and tailwind cdn -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- tailwind script file -->
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              clifford: "#da373d",
+            },
+            fontFamily: {
+              lexend: ["Lexend", "sans-serif"],
+            },
+          },
+        },
+      };
+    </script>
+  </head>
+  <body class="font-lexend">
+    <!-- header section starts here -->
+    <header
+      class="container mx-auto sticky top-0 z-10 bg-opacity-50 backdrop-blur-3xl"
+    >
+      <!-- navbar section starts here -->
+      <nav class="flex justify-between bg-[#F9F7F3] p-5">
+        <div>
+          <button
+            id="blogId"
+            class="bg-[#B4F461] px-5 py-2 rounded-md hover:bg-[#D3D3D3]"
+          >
+            Blog
+          </button>
+        </div>
+
+        <div class="flex items-center gap-2">
+          <h6><img src="assets/logo.png" alt="" /></h6>
+          <h6 class="hidden md:block">Donate Bangladesh</h6>
+        </div>
+        <div class="flex items-center gap-2">
+          <h6><img src="assets/coin.png" alt="" /></h6>
+          <h6><span id="cart-count">0</span> BDT</h6>
+        </div>
+      </nav>
+      <!-- navbar section ends here -->
+
+      <div class="border w-full mt-4"></div>
+    </header>
+    <!-- header section ends here -->
+
+    <!-- main section starts here -->
+
+    <main class="container mx-auto mt-16">
+      <div id="products" class="grid grid-cols-3 gap-5"></div>
+    </main>
+
+    <!-- main section ends here -->
+
+    <script src="script.js"></script>
+  </body>
+</html>

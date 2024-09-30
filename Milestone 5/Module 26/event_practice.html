@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div id="post-container">
+      <h1>All posts here</h1>
+      <br />
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugiat enim
+        vel qui vero. Laudantium libero, cum, debitis voluptatibus ut asperiores
+        suscipit dignissimos porro fuga quidem consequuntur optio? Labore, quo
+        possimus!
+      </p>
+      <br />
+      <p id="post2Id">
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nostrum
+        sapiente optio excepturi distinctio vel nulla nam dolores itaque esse,
+        quam voluptas similique, sequi doloribus non illum voluptatibus,
+        veritatis aliquid officia!
+      </p>
+    </div>
+
+    <br /><br />
+
+    <div>
+      <textarea
+        name=""
+        id="add-postId"
+        cols="60"
+        rows="10
+      "
+      ></textarea>
+      <br />
+      <button id="postBtn">post</button>
+    </div>
+
+    <script>
+      document.getElementById("postBtn").addEventListener("click", function () {
+        const inputField = document.getElementById("add-postId");
+        const inputText = inputField.value;
+
+        // document.getElementById("post2Id").innerText = inputText;
+        // inputField.value = "apnr lekha ki ses?";
+
+        const postContainer = document.getElementById("post-container");
+        const p = document.createElement("p");
+        p.innerText = inputText;
+        postContainer.appendChild(p);
+        inputField.value = "";
+      });
+    </script>
+  </body>
+</html>

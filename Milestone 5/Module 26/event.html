@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Event summary</title>
+  </head>
+  <body>
+    <h1>Event Summary</h1>
+
+    <h3 id="heyYouId">Hey there, how are you!</h3>
+    <button id="replyBtn">reply</button>
+
+    <br /><br />
+    <h2>Default Message</h2>
+    <p id="messageId">amr lab loss nai, amr jibon tai loss</p>
+    <br />
+    <input id="input-textId" type="text" />
+    <button id="updateBtn">Update</button>
+
+    <script>
+      document
+        .getElementById("replyBtn")
+        .addEventListener("click", function () {
+          document.getElementById("heyYouId").innerText =
+            "I am fine, what about you?";
+        });
+
+      // for text field
+      document
+        .getElementById("updateBtn")
+        .addEventListener("click", function () {
+          const inputText = document.getElementById("input-textId").value;
+
+          document.getElementById("messageId").innerText = inputText;
+          //   document.getElementById("input-textId").value = "";
+          inputText.value = ""; // here why line code is not working
+          // not working coz value should be set in input field not in input text
+        });
+    </script>
+  </body>
+</html>

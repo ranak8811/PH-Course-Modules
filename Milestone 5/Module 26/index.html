@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Event Listener</title>
+  </head>
+  <body>
+    <h1>is there raining?</h1>
+
+    <button onclick="greenYellow()">green yellow</button>
+    <button id="grayBtn">gray</button>
+    <button id="blueBtn">blue</button>
+    <button id="goldenBtn">golden</button>
+
+    <script src="js/script.js"></script>
+
+    <script>
+      const grayBtn = document.getElementById("grayBtn");
+      grayBtn.addEventListener("click", makeGray);
+
+      function makeGray() {
+        document.body.style.backgroundColor = "gray";
+      }
+
+      document
+        .getElementById("goldenBtn")
+        .addEventListener("click", function () {
+          document.body.style.backgroundColor = "gold";
+        });
+    </script>
+  </body>
+</html>
