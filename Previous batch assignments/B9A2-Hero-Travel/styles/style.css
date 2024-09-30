@@ -1,0 +1,309 @@
+@import url("https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200..1000;1,200..1000&display=swap");
+
+body {
+  font-family: "Mulish", sans-serif;
+}
+
+/* default styles starts here*/
+* {
+  margin: 0;
+}
+
+.container {
+  width: 90%;
+  margin: 5rem auto;
+  border-radius: 1rem;
+}
+
+.orange-text {
+  color: #ff5400;
+}
+
+h3 {
+  font-size: 30px;
+  text-align: center;
+  font-weight: 800;
+  line-height: normal;
+}
+
+p,
+li {
+  font-weight: normal;
+  font-size: 18px;
+  line-height: normal;
+  text-align: center;
+  color: rgba(19, 19, 24, 0.7);
+}
+
+/* default styles ends here*/
+
+/* navbar design starts here */
+.nav-bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.ham-burger {
+  display: none;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  width: 280px;
+}
+
+.logo img {
+  width: 48px;
+  height: 40px;
+  margin: 0.5rem;
+}
+
+.nav-options {
+  display: flex;
+  justify-content: space-evenly;
+  gap: 3rem;
+}
+
+.nav-options p {
+  cursor: pointer;
+}
+/* navbar design ends here */
+
+/* banner design starts here */
+.explore-your-travel {
+  background-image: linear-gradient(
+      180deg,
+      rgba(19, 19, 24, 0.8) 0%,
+      rgba(19, 19, 24, 0) 100%
+    ),
+    url("../images/Group-13.png");
+  padding: 7rem 0;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.explore-your-travel h3 {
+  color: white;
+  font-weight: 800;
+  font-size: 4rem;
+}
+
+.explore-your-travel p {
+  color: white;
+  font-size: 18px;
+  line-height: 26px;
+  width: 676px;
+  padding: 1.5rem 0;
+  margin: auto;
+}
+
+.travel-inputs {
+  margin-top: 2rem;
+  border-radius: 8px;
+  background-color: rgba(255, 255, 255, 0.3);
+  padding: 1rem;
+
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  backdrop-filter: blur(4px);
+}
+
+.travel-inputs input,
+.travel-inputs select {
+  width: 175px;
+  height: 50px;
+  padding: 0 0.5rem;
+  margin: 0 1rem;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.btn-primary {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  width: 175px;
+  height: 50px;
+  font-size: 1rem;
+  padding: 0.75rem 1.2rem;
+  background-color: #ff5400;
+  border: none;
+  border-radius: 8px;
+  color: white;
+}
+/* banner design ends here */
+
+/* popular section design starts here */
+.popular-section {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 3rem;
+}
+
+.popular-section img {
+  width: 100%;
+  height: 100%;
+}
+
+.text-content {
+  display: flex;
+  flex-direction: column;
+  row-gap: 1rem;
+  justify-content: space-between;
+}
+
+.text-content p,
+.text-content h3,
+.text-content li {
+  text-align: left;
+}
+
+.text-content p,
+.text-content li {
+  font-size: 16px;
+  line-height: 24px;
+}
+/* popular section design ends here */
+
+/* Choose Your Destination section design starts here */
+.row-1,
+.row-2,
+.row-3 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin: 1rem 0;
+  gap: 1rem;
+}
+
+.row-2 {
+  grid-template-columns: 0.8fr 1.5fr 0.7fr;
+}
+.row-3 {
+  grid-template-columns: 0.75fr 1.25fr;
+}
+
+.choose-your-destination img {
+  width: 100%;
+  height: 300px;
+  filter: brightness(70%);
+}
+
+.country-card {
+  position: relative;
+}
+
+.country {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  font-size: 28px;
+  font-weight: 800;
+  color: white;
+  transform: translate(-50%, -50%);
+}
+/* Choose Your Destination section design ends here */
+
+/* footer section design starts here */
+.footer-section {
+  background: rgba(19, 19, 24, 0.05);
+  padding: 2rem 0;
+}
+
+.footer-section p {
+  width: 60%;
+  margin: auto;
+}
+
+.footer-section .logo {
+  margin: 1rem auto;
+}
+
+.social {
+  width: 150px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 1rem auto;
+}
+
+.social i {
+  height: 44px;
+  font-size: 24px;
+}
+
+.footer-section hr {
+  margin: 2rem 0;
+}
+/* footer section design ends here */
+
+/* responsive design for small screens */
+@media screen and (max-width: 576px) {
+  .container {
+    margin: 3rem auto;
+  }
+  .nav-options {
+    display: none;
+  }
+
+  .ham-burger {
+    display: block;
+  }
+
+  h3 {
+    font-size: 26px;
+  }
+  p {
+    font-size: 16px;
+  }
+
+  .ham-burger i {
+    font-size: 26px;
+  }
+
+  .travel-inputs input {
+    padding: 0;
+  }
+
+  .explore-container h3 {
+    font-size: 26px;
+  }
+
+  .explore-container p {
+    width: 70%;
+  }
+
+  .travel-inputs {
+    flex-direction: column;
+    width: 70%;
+    margin: auto;
+  }
+
+  .travel-inputs input,
+  .travel-inputs select,
+  .travel-inputs button {
+    width: 100%;
+    margin: 1rem auto;
+  }
+
+  .popular-section,
+  .row-1,
+  .row-2,
+  .row-3 {
+    grid-template-columns: 1fr;
+  }
+
+  .footer-section p {
+    width: 80%;
+  }
+}
