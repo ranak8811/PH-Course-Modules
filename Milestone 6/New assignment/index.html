@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>BookStore Learning Platform</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body class="font-sans antialiased">
+    <!-- Navbar -->
+    <nav class="bg-white border-b shadow-lg">
+      <div
+        class="container mx-auto px-4 py-4 flex justify-between items-center"
+      >
+        <a href="#" class="text-2xl font-bold text-indigo-600">BookStore</a>
+        <ul class="hidden md:flex space-x-6">
+          <li>
+            <a href="#home" class="text-gray-700 hover:text-indigo-600">Home</a>
+          </li>
+          <li>
+            <a href="#features" class="text-gray-700 hover:text-indigo-600"
+              >Features</a
+            >
+          </li>
+          <li>
+            <a href="#pricing" class="text-gray-700 hover:text-indigo-600"
+              >Pricing</a
+            >
+          </li>
+          <li>
+            <a href="#contact" class="text-gray-700 hover:text-indigo-600"
+              >Contact</a
+            >
+          </li>
+        </ul>
+        <div class="md:hidden">
+          <button class="text-indigo-600">Menu</button>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="bg-indigo-100 py-20">
+      <div class="container mx-auto px-4 text-center">
+        <h1 class="text-4xl font-bold text-gray-800 leading-tight">
+          Learn from the Best Books at
+          <span class="text-indigo-600">BookStore</span>
+        </h1>
+        <p class="mt-4 text-lg text-gray-600">
+          Your gateway to world-class learning resources with books on every
+          subject.
+        </p>
+        <a
+          href="#pricing"
+          class="mt-6 inline-block bg-indigo-600 text-white px-6 py-3 rounded-lg text-lg"
+          >Start Learning</a
+        >
+      </div>
+    </section>
+
+    <!-- Features Section -->
+    <section id="features" class="py-16 bg-gray-50">
+      <div class="container mx-auto px-4 text-center">
+        <h2 class="text-3xl font-bold text-gray-800">Why Choose Us?</h2>
+        <p class="mt-4 text-gray-600">
+          We offer a wide range of books, interactive learning resources, and
+          much more.
+        </p>
+        <div class="grid md:grid-cols-3 gap-8 mt-10">
+          <!-- Feature 1 -->
+          <div class="bg-white p-8 rounded-lg shadow-md">
+            <img
+              src="https://via.placeholder.com/100"
+              alt="Books"
+              class="mx-auto"
+            />
+            <h3 class="mt-4 text-xl font-semibold text-gray-800">
+              Thousands of Books
+            </h3>
+            <p class="mt-2 text-gray-600">
+              Access thousands of books from various categories, handpicked by
+              experts.
+            </p>
+          </div>
+          <!-- Feature 2 -->
+          <div class="bg-white p-8 rounded-lg shadow-md">
+            <img
+              src="https://via.placeholder.com/100"
+              alt="Learning"
+              class="mx-auto"
+            />
+            <h3 class="mt-4 text-xl font-semibold text-gray-800">
+              Interactive Learning
+            </h3>
+            <p class="mt-2 text-gray-600">
+              Learn interactively with quizzes, projects, and expert tips for
+              each book.
+            </p>
+          </div>
+          <!-- Feature 3 -->
+          <div class="bg-white p-8 rounded-lg shadow-md">
+            <img
+              src="https://via.placeholder.com/100"
+              alt="Access"
+              class="mx-auto"
+            />
+            <h3 class="mt-4 text-xl font-semibold text-gray-800">
+              Anywhere Access
+            </h3>
+            <p class="mt-2 text-gray-600">
+              Learn at your own pace from anywhere with our cross-platform
+              support.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Pricing Section -->
+    <section id="pricing" class="py-16 bg-indigo-100">
+      <div class="container mx-auto px-4 text-center">
+        <h2 class="text-3xl font-bold text-gray-800">Choose Your Plan</h2>
+        <p class="mt-4 text-gray-600">
+          Affordable pricing plans to get you started on your learning journey.
+        </p>
+        <div class="grid md:grid-cols-3 gap-8 mt-10">
+          <!-- Plan 1 -->
+          <div class="bg-white p-8 rounded-lg shadow-md">
+            <h3 class="text-xl font-semibold text-gray-800">Basic Plan</h3>
+            <p class="mt-4 text-gray-600">$10/month</p>
+            <ul class="mt-4 space-y-2">
+              <li>Access to 1,000+ books</li>
+              <li>Basic Learning Tools</li>
+              <li>Email Support</li>
+            </ul>
+            <a
+              href="#"
+              class="mt-6 inline-block bg-indigo-600 text-white px-6 py-3 rounded-lg"
+              >Get Started</a
+            >
+          </div>
+          <!-- Plan 2 -->
+          <div class="bg-white p-8 rounded-lg shadow-md">
+            <h3 class="text-xl font-semibold text-gray-800">Pro Plan</h3>
+            <p class="mt-4 text-gray-600">$20/month</p>
+            <ul class="mt-4 space-y-2">
+              <li>Access to 5,000+ books</li>
+              <li>Advanced Learning Tools</li>
+              <li>Priority Support</li>
+            </ul>
+            <a
+              href="#"
+              class="mt-6 inline-block bg-indigo-600 text-white px-6 py-3 rounded-lg"
+              >Get Started</a
+            >
+          </div>
+          <!-- Plan 3 -->
+          <div class="bg-white p-8 rounded-lg shadow-md">
+            <h3 class="text-xl font-semibold text-gray-800">Premium Plan</h3>
+            <p class="mt-4 text-gray-600">$30/month</p>
+            <ul class="mt-4 space-y-2">
+              <li>Unlimited Book Access</li>
+              <li>Interactive Learning Tools</li>
+              <li>24/7 Support</li>
+            </ul>
+            <a
+              href="#"
+              class="mt-6 inline-block bg-indigo-600 text-white px-6 py-3 rounded-lg"
+              >Get Started</a
+            >
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Call to Action Section -->
+    <section id="contact" class="py-16 bg-gray-900 text-gray-100">
+      <div class="container mx-auto px-4 text-center">
+        <h2 class="text-3xl font-bold">Join Our Learning Community</h2>
+        <p class="mt-4">
+          Ready to dive into a world of books and endless learning
+          opportunities?
+        </p>
+        <a
+          href="#"
+          class="mt-6 inline-block bg-indigo-600 text-white px-6 py-3 rounded-lg"
+          >Get Started</a
+        >
+      </div>
+    </section>
+
+    <!-- this part is changed by me -->
+    <section class="bg-yellow-100 py-8 text-center">
+      <h1 class="text-4xl font-bold">
+        Pain is inevitable <br />
+        sufferirng is optional
+      </h1>
+
+      <h2 class="text-2xl font-bold">Testing inside surge</h2>
+      <h2 class="text-2xl font-bold">
+        Testing inside surge <br />
+        second time
+      </h2>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 py-8">
+      <div class="container mx-auto px-4 text-center text-gray-400">
+        <p>&copy; 2024 BookStore. All rights reserved.</p>
+      </div>
+    </footer>
+  </body>
+</html>
