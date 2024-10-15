@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="black">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Fetch Joke</title>
+
+    <style>
+      .container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+      }
+
+      .backgroundColor {
+        background-color: black;
+      }
+
+      .space {
+        margin: 10px;
+        padding: 10px;
+        border: 2px solid red;
+        border-radius: 10px;
+      }
+
+      .btn {
+        padding: 5px;
+        background-color: beige;
+        margin-top: 50px;
+        font-weight: bolder;
+        font-size: 30px;
+      }
+
+      .fontSize {
+        font-size: 20px;
+        font-weight: bold;
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body class="backgroundColor">
+    <button id="bg-change-btn" class="btn">Light</button>
+
+    <div class="container">
+      <button class="btn" onclick="bringData()">Click me to fetch joke</button>
+
+      <br /><br />
+      <div id="jokeContainer" class="container"></div>
+    </div>
+
+    <script src="fetch.js"></script>
+  </body>
+</html>
