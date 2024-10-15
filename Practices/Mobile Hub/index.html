@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mobile Details</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@latest/dist/full.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+  </head>
+  <body class="bg-gray-100">
+    <!-- Navbar -->
+    <nav class="bg-white shadow-lg">
+      <div class="container mx-auto px-4">
+        <div class="flex justify-between items-center py-4">
+          <a href="#" class="text-2xl font-bold text-blue-600">Mobile Hub</a>
+          <div class="flex space-x-4 items-center">
+            <input
+              id="search-input"
+              type="text"
+              placeholder="Search Mobile"
+              class="input input-bordered w-full max-w-xs"
+            />
+            <button onclick="searchMobiles()" class="btn btn-primary">
+              Search
+            </button>
+          </div>
+
+          <button onclick="showAllPhones()" class="text-2xl font-bold btn">
+            Show All
+          </button>
+        </div>
+      </div>
+    </nav>
+
+    <!-- card loader section -->
+    <div class="flex items-center justify-center">
+      <div
+        id="phoneLoader"
+        class="loading loading-infinity loading-lg lg:mt-24 text-primary hidden"
+      ></div>
+    </div>
+
+    <!-- Mobile Cards Section -->
+    <div
+      id="mobile-cards"
+      class="container mx-auto mt-8 grid grid-cols-1 md:grid-cols-3 gap-10"
+    >
+      <!-- Dynamic cards will be inserted here by JavaScript -->
+    </div>
+
+    <!-- Modal for Show Details -->
+    <input type="checkbox" id="details-modal" class="modal-toggle" />
+    <div class="modal">
+      <div class="modal-box">
+        <h3 class="font-bold text-lg" id="modal-title">Mobile Details</h3>
+        <p class="py-4" id="modal-content">Details will be displayed here...</p>
+        <div class="modal-action">
+          <label for="details-modal" class="btn">Close</label>
+        </div>
+      </div>
+    </div>
+
+    <script src="mobile.js"></script>
+    <!-- <script>
+      // Example data fetching function for mobile details
+      function searchMobiles() {
+        const query = document.getElementById("search-input").value;
+        fetch(`https://api.example.com/mobiles?search=${query}`)
+          .then((response) => response.json())
+          .then((data) => {
+            const mobileCards = document.getElementById("mobile-cards");
+            mobileCards.innerHTML = ""; // Clear previous results
+            data.forEach((mobile) => {
+              mobileCards.innerHTML += `
+                            <div class="card bg-base-100 shadow-xl">
+                                <figure><img src="${mobile.image}" alt="${mobile.model}" class="h-48 w-full object-cover" /></figure>
+                                <div class="card-body">
+                                    <h2 class="card-title">${mobile.model}</h2>
+                                    <button class="btn btn-primary" onclick="showDetails('${mobile.id}')">Show Details</button>
+                                </div>
+                            </div>
+                        `;
+            });
+          });
+      }
+
+      // Fetch and display details of a specific mobile
+      function showDetails(id) {
+        fetch(`https://api.example.com/mobile/${id}`)
+          .then((response) => response.json())
+          .then((details) => {
+            document.getElementById("modal-title").textContent = details.model;
+            document.getElementById(
+              "modal-content"
+            ).textContent = `Brand: ${details.brand}\nPrice: ${details.price}\nSpecifications: ${details.specifications}`;
+            document.getElementById("details-modal").checked = true; // Open modal
+          });
+      }
+    </script> -->
+  </body>
+</html>

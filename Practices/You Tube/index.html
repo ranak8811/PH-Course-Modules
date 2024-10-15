@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PH Tube</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@latest/dist/full.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+  </head>
+  <body class="bg-gray-100">
+    <!-- Navbar -->
+    <nav class="bg-white shadow-lg">
+      <div
+        class="container mx-auto px-4 py-4 flex justify-between items-center"
+      >
+        <div class="flex items-center space-x-4">
+          <a href="#" class="text-3xl font-bold text-red-600">PH Tube</a>
+        </div>
+        <button class="btn btn-secondary">Blog</button>
+      </div>
+    </nav>
+
+    <!-- Sort by view and categories -->
+    <div class="container mx-auto mt-4">
+      <div class="flex justify-between items-center">
+        <div>
+          <button class="btn btn-outline btn-primary">Sort by view</button>
+        </div>
+        <div class="flex space-x-2">
+          <button class="btn btn-active">All</button>
+          <button class="btn btn-outline">Music</button>
+          <button class="btn btn-outline">Comedy</button>
+          <button class="btn btn-outline">Drawing</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Cards Section -->
+    <div
+      id="video-cards"
+      class="container mx-auto mt-8 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6"
+    >
+      <!-- Example of a single card (this will be replaced dynamically by JS) -->
+      <div class="card bg-base-100 shadow-xl">
+        <figure>
+          <img
+            src="https://via.placeholder.com/300x200"
+            alt="Video Thumbnail"
+            class="h-48 w-full object-cover"
+          />
+        </figure>
+        <div class="card-body">
+          <h2 class="card-title">Sample Video Title</h2>
+          <p>Awlad Hossain <span class="text-blue-500">●</span> 91K views</p>
+          <p class="text-sm">3hrs 56 min ago</p>
+        </div>
+      </div>
+
+      <!-- Add more cards dynamically via JavaScript -->
+    </div>
+
+    <script>
+      // JavaScript code to dynamically fetch and populate data will go here
+    </script>
+  </body>
+</html>
